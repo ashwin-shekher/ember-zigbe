@@ -1,0 +1,17 @@
+{
+  "data": {
+    "type": "app-item",
+    "id": 1,
+    "attributes": {
+      "name": "WhatsApp Messenger",
+      "description": "WhatsApp from Facebook",
+      "author_name": "WhatsApp Inc.",
+      "download_count": 105219552,
+      "thumbnail": "https://lh3.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN=s360-rw",
+      "tag": "COMMUNICATION",
+      "price": "FREE",
+      "download_link": "",
+      "rating": 4.5
+    }
+  }
+}

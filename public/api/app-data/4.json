@@ -1,0 +1,17 @@
+{
+  "data": {
+    "type": "app-item",
+    "id": 4,
+    "attributes": {
+      "name": "Hike Sticker Chat - Fun & Expressive Messaging",
+      "description": "The fastest messaging app on the market, connecting people via a unique, distributed network of data centers around the globe.",
+      "author_name": "Hike Private Limited",
+      "download_count": 130618,
+      "thumbnail": "https://lh3.googleusercontent.com/9w8L3ip45fMpzticsmLaC8RlG2VA8wQQ_H88TG2VV9uMnjU2dB2sFuGywy4qljSLdNQ=s360-rw",
+      "tag": "SOCIAL",
+      "price": "FREE",
+      "download_link": "",
+      "rating": 4.2
+    }
+  }
+}

@@ -1,9 +1,21 @@
- <div class="app-item {{@class}}">
-      <div class="app-img" style="background-image: url('{{@data.thumbnail}}');"></div>
-      <div class="app-info">
-        <div class="app-rating my-2">{{@data.rating}}</div>
-        <div class="app-name my-2">{{@data.name}}</div>
-        <div class="app-author my-2">{{@data.author_name}}</div>
-        <div class="app-tag my-2">{{@data.tag}}</div>
-      </div>
+<div class="app-item {{@class}}">
+  <div class="app-img" style="background-image: url('{{@data.thumbnail}}');"></div>
+  <div class="app-info">
+    <div class="app-rating my-2">
+      {{@data.rating}}
     </div>
+    <div class="app-name my-2">
+      {{#link-to "app-detail" @data.id}}
+        {{@data.name}}
+      {{/link-to}}
+    </div>
+    <div class="app-author my-2">
+     
+      {{@data.author_name}}
+    </div>
+    <div class="app-tag my-2">
+      {{@data.tag}}
+    </div>
+  
+  </div>
+</div>

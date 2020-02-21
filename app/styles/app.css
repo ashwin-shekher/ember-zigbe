@@ -21,6 +21,7 @@
   height: 100vh;
   background-color: #ADBABC;
   overflow: hidden;
+  display: none;
 }
 
 .header .search-box {
@@ -104,16 +105,16 @@ h1 {
 
 }
 
-.my-5{
-    margin-top:2.5rem;
-    margin-bottom: 2.5rem;
-  
-  }
+.my-5 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+
+}
 
 .app-item {
   display: flex;
-  margin-top:60px;
-  margin-right:40px;
+  margin-top: 60px;
+  margin-right: 40px;
 
 }
 
@@ -146,6 +147,12 @@ h1 {
   text-overflow: ellipsis;
 }
 
+
+.app-item .app-name a {
+  text-decoration: none;
+  color: #1B191D;
+}
+
 .app-item .app-author {
   font-size: 0.8rem;
   color: #ADBABC;
@@ -153,7 +160,7 @@ h1 {
 
 .app-item .app-tag {
   font-size: 0.6rem;
-  background-color:   #d4d4d43b;
+  background-color: #d4d4d43b;
   width: fit-content;
   padding: 10px 20px;
   border-radius: 20px;
@@ -165,4 +172,57 @@ h1 {
   display: flex;
   flex-wrap: wrap;
 
+}
+
+.app-description {
+  display: flex;
+}
+
+.app-description .app-img {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 25px;
+  background-size: contain;
+  box-shadow: 0px 0px 4px 3px #b5b5b561;
+}
+
+.app-description .app-info {
+  margin-left: 50px;
+}
+
+.backdrop {
+  height: 100vh;
+  background-color: #f6f6f6;
+}
+
+
+.app-description .app-info .app-name {
+  padding: 20px 0;
+  font-size: 3rem;
+  color: #ADBABC;
+}
+
+.app-description .app-info .app-download-count {
+  padding: 10px 0;
+  font-size: 0.8rem;
+}
+
+.app-description .app-info .app-author {
+  padding: 10px 0;
+  font-size: 1.5rem;
+}
+
+.btn{
+  padding: 10px 62px;
+  background: rgb(0, 0, 0);
+  color:white;
+  width: fit-content;
+  border-radius: 20px;
+  box-shadow: 0px 0px 4px 3px #b5b5b561;
+  cursor: pointer;
+}
+
+.back{
+  color:#ADBABC;
 }

@@ -1,0 +1,18 @@
+{
+    "data": {
+      "type": "app-item",
+      "id": 5,
+      "attributes": {
+        "name" : "Telegram Messenger",
+        "description" : "simple, fast, secure, and synced across all your devices.",
+        "author_name" : "Telegram FZ-LLC",
+        "download_count" : 4606233,
+        "thumbnail" : "https://lh3.googleusercontent.com/ZU9cSsyIJZo6Oy7HTHiEPwZg0m2Crep-d5ZrfajqtsH-qgUXSqKpNA2FpPDTn-7qA5Q=s360-rw",
+        "tag" : "COMMUNICATION",
+        "price" : "FREE",
+        "download_link" : "",
+        "rating" : 4.5
+      }
+    }
+  }
+  

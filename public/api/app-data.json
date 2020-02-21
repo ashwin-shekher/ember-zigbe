@@ -1,7 +1,7 @@
 {
     "data" : [
         {
-            "app_id" : "001",
+            "app_id" : 1,
             "name" : "WhatsApp Messenger",
             "description" : "WhatsApp from Facebook",
             "author_name" : "WhatsApp Inc.",
@@ -13,7 +13,7 @@
             "rating" : 4.5
         },
         {
-            "app_id" : "002",
+            "app_id" : 2,
             "name" : "Hike Sticker Chat - Fun & Expressive Messaging",
             "description" : "The fastest messaging app on the market, connecting people via a unique, distributed network of data centers around the globe.",
             "author_name" : "Hike Private Limited",
@@ -25,7 +25,7 @@
             "rating" : 4.2
         },
         {
-            "app_id" : "003",
+            "app_id" : 3,
             "name" : "Telegram Messenger",
             "description" : "simple, fast, secure, and synced across all your devices.",
             "author_name" : "Telegram FZ-LLC",
@@ -37,7 +37,7 @@
             "rating" : 4.5
         },
         {
-            "app_id" : "002",
+            "app_id" : 4,
             "name" : "Hike Sticker Chat - Fun & Expressive Messaging",
             "description" : "The fastest messaging app on the market, connecting people via a unique, distributed network of data centers around the globe.",
             "author_name" : "Hike Private Limited",
@@ -49,7 +49,7 @@
             "rating" : 4.2
         },
         {
-            "app_id" : "003",
+            "app_id" : 5,
             "name" : "Telegram Messenger",
             "description" : "simple, fast, secure, and synced across all your devices.",
             "author_name" : "Telegram FZ-LLC",
