@@ -7,11 +7,11 @@ import {
 } from '@ember/object';
 
 import {
-    inject as service
-  } from '@ember/service';
-  
-  
-  
+  inject as service
+} from '@ember/service';
+
+
+
 
 export default class FormComponentComponent extends Component {
   @tracked name = "he";
@@ -27,25 +27,20 @@ export default class FormComponentComponent extends Component {
   @service store;
 
   @action submit() {
-    console.log(this.name);
 
-   let result =  this.store.createRecord('app-data', {
+    let result = this.store.createRecord('app-data', {
       name: this.name,
       author_name: this.author_name,
       description: this.description,
       download_count: this.download_count,
       thumbnail: this.thumbnail,
-      tag:this.tag,
+      tag: this.tag,
       price: this.price,
       download_link: this.download_link,
       rating: this.rating
     });
 
     result.save();
-
-    console.log("result:",result);
-    
   }
-
 
 }
