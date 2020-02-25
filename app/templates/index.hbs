@@ -1,15 +1,27 @@
+
+<Header>
+ {{input value=searchTerm class="search-box" placeholder="Search By App Name" }}
+</Header>
 <div class="px-5">
-
   <div class="heading">
-  <h1 class="my-5">
-    Daily Top 100
-  </h1>
-
-  <div class="btn" {{action "navigateToAddApp"}}>ADD</div>
-</div>
+    <h1 class="my-5">
+      Daily Top 100
+    </h1>
+    <div class="btn" {{action "navigateToAddApp"}}>
+      ADD
+    </div>
+  </div>
   <div class="app-list-container my-5">
-    {{#each @model as |data|}}
-      <AppItem @data={{data}} />
-    {{/each}}
+
+    
+    <AppItems::Filter
+       @models={{@model}} @searchTerm={{this.searchTerm}} as |model|>
+       
+      {{#each model as |data|}}
+        <AppItem @data={{data}} />
+      {{/each}}
+      
+    </AppItems::Filter>
+  
   </div>
 </div>
