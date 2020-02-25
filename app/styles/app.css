@@ -221,8 +221,35 @@ h1 {
   border-radius: 20px;
   box-shadow: 0px 0px 4px 3px #b5b5b561;
   cursor: pointer;
+
+  height: fit-content;
 }
 
 .back{
   color:#ADBABC;
+}
+
+.heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.formContainer{
+  width: 30%;
+}
+
+.form-elements{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.mb-5{
+  margin-bottom: 2.5rem;
+}
+
+.link{
+  cursor: pointer;
 }

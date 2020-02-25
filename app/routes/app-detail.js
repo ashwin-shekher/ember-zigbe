@@ -8,6 +8,6 @@ export default class AppDetailRoute extends Route {
 
   @service store;
   async model(params) {
-    return this.store.find('app-item', params.id);
+    return this.store.peekRecord('app-data', params.id);
   }
 }

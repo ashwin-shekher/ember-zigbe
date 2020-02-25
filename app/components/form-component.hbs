@@ -1,0 +1,32 @@
+<div class="name form-elements">
+  <label>
+    Application Name
+  </label>
+  {{input value=name}}
+ 
+</div>
+<div class="author form-elements">
+  <label>
+    Application Author
+  </label>
+   {{input value=author_name}}
+</div>
+<div class="description form-elements">
+  <label>
+    Application Description
+  </label>
+
+   {{input value=description}}
+</div>
+<div class="tag form-elements">
+  <label>
+    Application Tag
+  </label>
+
+   {{input value=tag}}
+</div>
+<div class="submit">
+  <button class="btn" type="button" {{on "click" this.submit}}>
+    ADD
+  </button>
+</div>

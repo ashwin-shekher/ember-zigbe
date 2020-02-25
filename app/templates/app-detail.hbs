@@ -1,26 +1,26 @@
 <div class="backdrop">
- 
   <div class="px-5 py-5">
-     <div class="back"> 
-    <a href="/">
-       Back Home
-    </a>
-       </div>
+    <Back></Back>
     <div class="app-description py-5">
       <div class="app-img" style="background-image: url('{{@model.thumbnail}}');"></div>
       <div class="app-info">
         <div class="app-name">
           {{@model.name}}
         </div>
-          <div class="app-author">Author : {{@model.author_name}}</div>
-     
-        <div class="app-download-count">{{format-count @model.download_count}} Downloads</div>
+        <div class="app-author">
+          Author :
+          {{@model.author_name}}
+        </div>
+        <div class="app-download-count">
+          {{format-count @model.download_count}}
+          Downloads
+        </div>
       </div>
     </div>
     <div class="">
-        <div class="btn">
-            Download
-        </div>
+      <div class="btn">
+        Download
+      </div>
     </div>
   </div>
 </div>
