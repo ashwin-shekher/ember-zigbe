@@ -19,14 +19,10 @@ export default class IndexRoute extends Route {
   @tracked searchTerm = "";
 
   async model() {
-
-debugger;
     let appData = this.store.peekAll('app-data')
     if (appData.content.length == 0 ) {
       appData = await this.store.findAll('app-data');
     }
-
-    // console.log(appData);
     return appData;
   }
 
@@ -35,7 +31,6 @@ debugger;
   }
 
   @action setSearchTerm() {
-    console.log("Term" );
     // this.searchTerm = "hello";
   }
 }

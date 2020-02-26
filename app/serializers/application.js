@@ -8,7 +8,6 @@ export default class ApplicationSerializer extends JSONAPISerializer {
     payload = payload.data;
     payload.map(function (record) {
       var id = record["app_id"];
-      console.log("record.appId", record)
       delete record.app_id;
       var normalizedRecord = {
         'type': primaryModelClass.modelName,

@@ -3,7 +3,7 @@ import Component from '@glimmer/component';
 export default class AppItemsFilterComponent extends Component {
 
   get results() {
-    debugger;
+
     let {
       models,
       searchTerm
@@ -18,7 +18,6 @@ export default class AppItemsFilterComponent extends Component {
 
       );
     }
-    debugger;
     return models;
   }
 }

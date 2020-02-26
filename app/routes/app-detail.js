@@ -23,9 +23,6 @@ export default class AppDetailRoute extends Route {
   }
 
   @action downloadNow(download_count) {
-
-    debugger;
-    console.log(this.params.id)
     this.store.findRecord('app-data', this.params.id).then(function (appData) {
       appData.download_count = appData.download_count + 1;
     });
