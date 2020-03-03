@@ -2,14 +2,14 @@
   <label>
     Application Name
   </label>
-  {{input value=name}}
+  {{input value=name class="app_name"}}
  
 </div>
 <div class="appImage form-elements">
   <label>
     Application Image
   </label>
-  {{input value=thumbnail}}
+  {{input value=thumbnail class="app_thumbnail"}}
  
 </div>
 
@@ -17,24 +17,24 @@
   <label>
     Application Author
   </label>
-   {{input value=author_name}}
+   {{input value=author_name class="app_author"}}
 </div>
 <div class="description form-elements">
   <label>
     Application Description
   </label>
 
-   {{input value=description}}
+   {{input value=description class="app_description"}}
 </div>
 <div class="tag form-elements">
   <label>
     Application Tag
   </label>
 
-   {{input value=tag}}
+   {{input value=tag class="app_tag"}}
 </div>
 <div class="submit">
-  <button class="btn" type="button" {{on "click" this.submit}}>
+  <button class="btn" class="submitBtn" type="button" {{on "click" this.submit}}>
     ADD
   </button>
 </div>

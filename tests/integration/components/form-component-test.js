@@ -1,26 +1,42 @@
-import { module, test } from 'qunit';
-import { setupRenderingTest } from 'ember-qunit';
-import { render } from '@ember/test-helpers';
-import { hbs } from 'ember-cli-htmlbars';
+import { module, test } from "ember-qunit";
+import { setupRenderingTest } from "ember-qunit";
+import { render } from "@ember/test-helpers";
+import { hbs } from "ember-cli-htmlbars";
 
-module('Integration | Component | form-component', function(hooks) {
+import { click } from "@ember/test-helpers";
+
+import Service from "@ember/service";
+Service.extend({
+  createRecord() {
+    return this.save();
+  },
+  save() {}
+});
+
+
+module("Integration | Component | form-component", function(hooks) {
   setupRenderingTest(hooks);
 
-  test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
+  hooks.beforeEach(function() {});
 
-    await render(hbs`<FormComponent />`);
+  test("it renders", async function(assert) {
+    this.owner.register(
+      "service:router",
+      Service.extend({
+        transitionTo(data) {
+          assert.ok(true, "TransitionTo Called with Data '" + data + "'");
+        }
+      })
+    );
 
-    assert.equal(this.element.textContent.trim(), '');
+    await render(hbs`<FormComponent submit=(action submit)/>`);
 
-    // Template block usage:
-    await render(hbs`
-      <FormComponent>
-        template block text
-      </FormComponent>
-    `);
+    assert.dom(".app_name").exists();
+    assert.dom(".app_thumbnail").exists();
+    assert.dom(".app_name").exists();
+    assert.dom(".app_description").exists();
+    assert.dom(".app_tag").exists();
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    await click(".submitBtn");
   });
 });

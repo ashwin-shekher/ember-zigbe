@@ -1,13 +1,19 @@
-import { module, test } from 'qunit';
-import { setupTest } from 'ember-qunit';
+import { module, test } from "qunit";
+import { setupTest } from "ember-qunit";
 
-module('Unit | Model | app data', function(hooks) {
+import { run } from "@ember/runloop";
+
+module("Unit | Model | app data", function(hooks) {
   setupTest(hooks);
+  test("it exists", function(assert) {
+    const appData = run(() =>
+      this.owner.lookup("service:store").createRecord("app-data", {
+        name: "Whatsapp",
+        description: "Description",
+        author_name: "Ashwin"
+      })
+    );
 
-  // Replace this with your real tests.
-  test('it exists', function(assert) {
-    let store = this.owner.lookup('service:store');
-    let model = store.createRecord('app-data', {});
-    assert.ok(model);
+    assert.equal(appData.name, "Whatsapp", "Store Successful!");
   });
 });

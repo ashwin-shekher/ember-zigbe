@@ -12,15 +12,9 @@ module('Integration | Component | user-profile', function(hooks) {
 
     await render(hbs`<UserProfile />`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    assert.equal(this.element.textContent.trim(), 'John Doe');
 
     // Template block usage:
-    await render(hbs`
-      <UserProfile>
-        template block text
-      </UserProfile>
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
+   
   });
 });

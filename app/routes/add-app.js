@@ -1,7 +1,3 @@
-import Route from '@ember/routing/route';
+import Route from "@ember/routing/route";
 
-export default class AddAppRoute extends Route {
-
- 
-
-}
+export default class AddAppRoute extends Route {}

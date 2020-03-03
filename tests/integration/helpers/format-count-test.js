@@ -9,9 +9,7 @@ module('Integration | Helper | format-count', function(hooks) {
   // Replace this with your real tests.
   test('it renders', async function(assert) {
     this.set('inputValue', '1234');
-
     await render(hbs`{{format-count inputValue}}`);
-
-    assert.equal(this.element.textContent.trim(), '1234');
+    assert.equal(this.element.textContent.trim(), '1,234');
   });
 });
