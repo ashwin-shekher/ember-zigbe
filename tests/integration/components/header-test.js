@@ -7,10 +7,10 @@ module("Integration | Component | header", function(hooks) {
   setupRenderingTest(hooks);
 
   test("it renders", async function(assert) {
-    
+    this.set("searchTerm", "");
     await render(hbs`
       <Header>
-      {{input value=searchTerm class="search-box" placeholder="Search By App Name" }}
+      <input value={{this.searchTerm}} class="search-box" placeholder="Search By App Name" />
       </Header>
     `);
 

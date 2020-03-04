@@ -29,7 +29,7 @@ module("Integration | Component | form-component", function(hooks) {
       })
     );
 
-    await render(hbs`<FormComponent submit=(action submit)/>`);
+    await render(hbs`<FormComponent />`);
 
     assert.dom(".app_name").exists();
     assert.dom(".app_thumbnail").exists();

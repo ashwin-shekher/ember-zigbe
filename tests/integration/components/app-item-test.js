@@ -20,7 +20,7 @@ module("Integration | Component | app-item", function(hooks) {
     };
     this.set("data", data);
 
-    await render(hbs`<AppItem @data={{data}}/>`);
+    await render(hbs`<AppItem @data={{this.data}}/>`);
 
     assert.dom(".app-img").exists();
     assert.dom(".app-info").exists();
