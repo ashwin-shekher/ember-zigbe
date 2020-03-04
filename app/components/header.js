@@ -2,8 +2,11 @@ import Component from "@glimmer/component";
 
 import { action } from "@ember/object";
 
+
 export default class HeaderComponent extends Component {
-  @action updateSearchTerm() {
+  @action
+  updateSearchTerm() {
     this.sendAction("setSearchTerm");
+    return true;
   }
 }

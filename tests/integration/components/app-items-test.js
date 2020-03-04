@@ -44,7 +44,6 @@ module("Integration | Component | app-items", function(hooks) {
     await render(hbs`
       <AppItems @model={{this.model}} @searchTerm="WhatsApp"/>
     `);
-    debugger;
     assert.equal(
       this.element.querySelectorAll(".app-item").length,
       1,

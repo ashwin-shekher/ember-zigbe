@@ -11,7 +11,6 @@ export default class AppDetailRoute extends Route {
   params;
 
   async model(params) {
-    console.log("params",params);
     this.params = params;
     let store = this.store.peekRecord("app-data", params.id);
     if (!store) {
