@@ -16,6 +16,7 @@ export default class IndexRoute extends Route {
     if (appData.content.length == 0) {
       appData = await this.store.findAll("app-data");
     }
+
     return appData;
   }
 

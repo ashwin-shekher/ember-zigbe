@@ -8,9 +8,10 @@ import { tracked } from "@glimmer/tracking";
 
 export default class AppDetailRoute extends Route {
   @service store;
-  @tracked params;
+  params;
 
   async model(params) {
+    console.log("params",params);
     this.params = params;
     let store = this.store.peekRecord("app-data", params.id);
     if (!store) {
@@ -21,15 +22,5 @@ export default class AppDetailRoute extends Route {
     }
   }
 
-  @action downloadNow() {
-    let params = this.params;
-    this.store
-      .findRecord("app-data", params.id)
-      .then(function(appData) {
-        appData.download_count = appData.download_count + 1;
-      })
-      .catch(err => {
-        console.log(err);
-      });
-  }
+
 }

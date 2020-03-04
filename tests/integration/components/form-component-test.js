@@ -38,5 +38,6 @@ module("Integration | Component | form-component", function(hooks) {
     assert.dom(".app_tag").exists();
 
     await click(".submitBtn");
+    
   });
 });

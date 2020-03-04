@@ -10,11 +10,8 @@
       ADD
     </button>
   </div>
-  <div class="app-list-container my-5">
-    <AppItems::Filter @models={{@model}} @searchTerm={{this.searchTerm}} as |model|>
-      {{#each model as |data|}}
-        <AppItem @data={{data}} />
-      {{/each}}
-    </AppItems::Filter>
+  <div class="app-list-container my-5" >
+
+    <AppItems @model={{@model}}  @searchTerm={{this.searchTerm}} />
   </div>
 </div>

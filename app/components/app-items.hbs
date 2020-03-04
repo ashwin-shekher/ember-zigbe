@@ -1,1 +1,5 @@
-{{yield}}
+<AppItems::Filter @model={{@model}} @searchTerm={{@searchTerm}} as |model|>
+  {{#each model as |data|}}
+    <AppItem @data={{data}} />
+  {{/each}}
+</AppItems::Filter>

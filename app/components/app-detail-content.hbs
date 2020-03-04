@@ -1,0 +1,22 @@
+<div class="app-description py-5">
+  <div class="app-img" style="background-image: url('{{@model.thumbnail}}');"></div>
+  <div class="app-info">
+    <div class="app-name">
+  
+      {{@model.name}}
+    </div>
+    <div class="app-author">
+      Author :
+      {{@model.author_name}}
+    </div>
+    <div class="app-download-count">
+      <span data-test-download-count>{{format-count @model.download_count}}</span>
+      Downloads
+    </div>
+  </div>
+</div>
+<div class="">
+  <button class="btn" type="button" {{on "click" (fn this.downloadNow)}}>
+    Download
+  </button>
+</div>
